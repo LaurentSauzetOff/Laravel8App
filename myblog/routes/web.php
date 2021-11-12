@@ -22,8 +22,8 @@ Route::get('/test', function () {
 });
 
 Route::prefix('admin')->group(function () {
-    Route::get('/user', function () {
-        return 'Ma user list';
+    Route::get('/users', function () {
+        return response('Ma user list');
     });
     Route::get('/articles', function () {
         return 'Ma articles list';
