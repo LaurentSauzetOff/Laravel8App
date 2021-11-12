@@ -18,5 +18,18 @@ Route::get('/', function () {
 });
 
 Route::get('/test', function () {
-    return 'Coucou !';
+    return 'GET route !';
+});
+
+Route::prefix('admin')->group(function () {
+    Route::get('/user', function () {
+        return 'Ma user list';
+    });
+    Route::get('/articles', function () {
+        return 'Ma articles list';
+    });
+
+    Route::get('/categories', function () {
+        return 'Ma categorie list ';
+    });
 });
