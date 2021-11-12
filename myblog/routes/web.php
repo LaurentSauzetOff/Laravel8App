@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
+/* Route::get('/test', function () {
     return 'GET route !';
 });
 
@@ -33,3 +33,10 @@ Route::prefix('admin')->group(function () {
         return 'Ma categorie list ';
     });
 });
+ */
+
+Route::get('/test', function(){
+    return view('test')
+})
+
+
